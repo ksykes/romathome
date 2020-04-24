@@ -19,6 +19,14 @@
 
 	<div class="content"<?php print $content_attributes; ?>>
 
+	<!-- print series wordmark by title -->
+	<?php if (isset($content['field_series'])) {
+		$term = taxonomy_term_load($node->field_series['und'][0]['tid']);
+		// $result=field_view_field('taxonomy_term',$term,'field_image');
+		// echo render($result)
+		print render($term);
+	} ?>
+
 		<div class="activity-metadata">
 			<div class="activity-tags">
 				<?php if (isset($content['field_rah_activity_type'])) {
