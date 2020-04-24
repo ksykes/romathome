@@ -1,0 +1,3 @@
+name = romathomeinfo
+description = Custom alterations for admin pages on ROM at Home microsite
+core = 7.x

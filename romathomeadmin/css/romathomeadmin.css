@@ -1,0 +1,9 @@
+/* add label to main feature boolean */
+#edit-field-featured-article::before {
+    content: 'Primary Feature';
+    font-weight: bold;
+}
+
+.group-featured-activity .fieldset-description {
+    white-space: pre;
+}
